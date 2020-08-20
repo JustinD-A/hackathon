@@ -1,7 +1,7 @@
 {
     "name": "Igpay Atinlay",
     "description" : "Translates the Page into Piglatin",
-    "version": "1.0",
+    "version": "1.1",
     "manifest_version": 2,
     "background": {
       "scripts": ["main.js"],
@@ -9,7 +9,7 @@
     },
     "content_scripts": [
         {
-          "matches": ["https://*.google.com/*", "https://www.youtube.com/*", "https://developer.chrome.com/extensions/content_scripts"],
+          "matches": ["https://*.google.com/*", "https://www.cnn.com/*", "https://codesmith.io/*", "https://www.theatlantic.com/*", "https://www.youtube.com/*", "https://developer.chrome.com/extensions/content_scripts"],
           "js": ["main.js"]
         }
       ]
