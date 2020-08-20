@@ -11,7 +11,7 @@ function pigTrans(string) {
 }
 
 // console.log(pigTrans('thing, one and two'));
-
+document.querySelector('body').style.backgroundColor = 'green';
 
 
 
@@ -19,8 +19,9 @@ function pigTrans(string) {
 // chrome.runtime.onInstalled.addListener(function(
 
 // need an event listener to trigger this script
-document.addEventListener('DOMContentLoaded', function() {
-  console.log('DOM Event Successful');  
+document.addEventListener('DOMContentLoaded', function(event) {
+// chrome.runtime.onInstalled.addListener(function() {
+  document.querySelector('body').style.backgroundColor = 'green';
   // navigate the DOM
     // if the element has a text value
         // change the inner text to the value of invoking pigtrans with the text value as the arg

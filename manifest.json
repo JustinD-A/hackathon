@@ -9,8 +9,8 @@
     },
     "content_scripts": [
         {
-          "matches": ["https://www.youtube.com/*"],
-          "js": ["./main.js"]
+          "matches": ["https://*.google.com/*", "https://www.youtube.com/*", "https://developer.chrome.com/extensions/content_scripts"],
+          "js": ["main.js"]
         }
       ]
 }
